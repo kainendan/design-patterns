@@ -1,5 +1,6 @@
 package strategy;
 
+//** Creates strip behavior for defense */
 public class StripBehavior implements DefenseBehavior{
     
     @Override

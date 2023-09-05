@@ -1,5 +1,6 @@
 package strategy;
 
+//** Creates sack behavior for defense */
 public class SackBehavior implements DefenseBehavior{
     
     @Override
