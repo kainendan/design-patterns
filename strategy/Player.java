@@ -1,5 +1,6 @@
 package strategy;
 
+//** Creates the player class that is used for both offense and defense */
 public abstract class Player {
     
     private String firstName;

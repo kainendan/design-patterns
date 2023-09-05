@@ -1,5 +1,6 @@
 package strategy;
 
+//** Randomly selects run behavior */
 public class RunBehavior implements OffenseBehavior{
     
     @Override

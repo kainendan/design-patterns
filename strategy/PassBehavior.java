@@ -1,5 +1,6 @@
 package strategy;
 
+//** Selects a random pass play */
 public class PassBehavior implements OffenseBehavior{
     
     @Override

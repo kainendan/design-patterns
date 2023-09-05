@@ -1,5 +1,7 @@
 package strategy;
 
+//* Randomly selects a reciever-specific behavior for the reciever */
+
 public class ReceiveBehavior implements OffenseBehavior {
     
     @Override

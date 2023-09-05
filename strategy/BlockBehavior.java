@@ -1,5 +1,6 @@
 package strategy;
 
+//** Returns a blocker-specific behavior for the lineman when on defense. */
 public class BlockBehavior implements DefenseBehavior {
     
     @Override
