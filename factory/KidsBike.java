@@ -1,5 +1,8 @@
 package factory;
 
+/*
+ * Class for a kids bike
+ */
 public class KidsBike extends Bike{
     public KidsBike(){
         name = "Kids Bike";

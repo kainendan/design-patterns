@@ -1,5 +1,8 @@
 package factory;
 
+/*
+ * Class for a tricycle
+ */
 public class Tricycle extends Bike {
     public Tricycle(){
         name = "Tricycle";

@@ -1,5 +1,8 @@
 package factory;
 
+/*
+ * Class for a strider
+ */
 public class Strider extends Bike {
     public Strider(){
         name = "Strider";
