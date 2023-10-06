@@ -22,8 +22,9 @@ public class Document {
     }
 
     /*
-     * Returns the title of the document
-     * @return the title of the document
+     * Adds a change to the document
+     * @param change - the change to add
+     * @return the change that was added
      */
     public String makeChange(String change){
         undoStack.push(change);
@@ -32,8 +33,8 @@ public class Document {
     }
 
     /*
-     * Returns the title of the document
-     * @return the title of the document
+     * Undoes the latest change to the document
+     * @return the change that was undone
      */
     public String undoChange(){
         if (undoStack.isEmpty())
@@ -44,16 +45,16 @@ public class Document {
     }
 
     /*
-     * Returns the title of the document
-     * @return the title of the document
+     * Checks if the document can be undone
+     * @return true if the document can be undone, false otherwise
      */
     public boolean canUndo(){
         return !undoStack.isEmpty();
     }
 
     /*
-     * Returns the title of the document
-     * @return the title of the document
+     * Redoes the latest change to the document
+     * @return the change that was redone
      */
     public String redoChange(){
         if (redoStack.isEmpty())
@@ -64,24 +65,24 @@ public class Document {
     }
 
     /*
-     * Returns the title of the document
-     * @return the title of the document
+     * Checks if the document can be redone
+     * @return true if the document can be redone, false otherwise
      */
     public boolean canRedo(){
         return !redoStack.isEmpty();
     }
 
     /*
-     * Returns the title of the document
-     * @return the title of the document
+     * Getter for the undo stack
+     * @return the undo stack
      */
     public StackIterator getUndoIterator(){
         return new StackIterator(undoStack);
     }
 
     /*
-     * Returns the title of the document
-     * @return the title of the document
+     * Getter for the redo stack
+     * @return the redo stack
      */
     public StackIterator getRedoIterator(){
         return new StackIterator(redoStack);
